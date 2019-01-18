@@ -25,6 +25,8 @@ cd "$RAI_ROOT"
 apt-get update
 
 ## gcc-7 & 6
+add-apt-repository ppa:ubuntu-toolchain-r/test
+apt-get update
 apt-get install -y g++-6
 
 # basics

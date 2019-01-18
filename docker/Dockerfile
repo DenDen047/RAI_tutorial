@@ -11,3 +11,4 @@ WORKDIR /opt/rai
 ADD install.sh /opt/rai/install.sh
 RUN chmod +x install.sh
 RUN ./install.sh
+RUN mkdir build && cd build && cmake .. -DRAI_APP=examples/poleBalwithTRPO && make -j
