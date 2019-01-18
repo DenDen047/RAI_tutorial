@@ -1,9 +1,8 @@
-FROM nvidia/cuda:8.0-cudnn6-runtime-ubuntu16.04
+FROM tensorflow/tensorflow:1.3.0-gpu-py3
 
 # init
 RUN apt-get update && apt-get upgrade -y
-RUN apt-get install -y git
-
+RUN apt-get install -y git sudo wget
 
 # RAI
 WORKDIR /opt
