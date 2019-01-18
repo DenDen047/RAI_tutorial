@@ -12,5 +12,3 @@ WORKDIR /opt/rai
 ADD install.sh /opt/rai/install.sh
 RUN chmod +x install.sh
 RUN ./install.sh
-
-
